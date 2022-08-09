@@ -1,0 +1,23 @@
+1. Write a script that adds an index to the my_guitar_shop database for the zip code field in the Customers table.
+
+2. Write a script that implements the following design in a database named my_web_db:
+In the Downloads table, the user_id and product_id columns are the foreign keys.
+Include a statement to drop the database if it already exists.
+Include statements to create and select the database.
+Include any indexes that you think are necessary.
+Specify the utf8mb4 character set for all tables.
+Specify the InnoDB storage engine for all tables.
+
+3. Write a script that adds rows to the database that you created in exercise 2.
+Add two rows to the Users and Products tables.
+Add three rows to the Downloads table: one row for user 1 and product 2; one row for user 2 and product 1; and one row for user 2 and product 2. Use the NOW function to insert the current date and time into the download_date column.
+Write a SELECT statement that joins the three tables and retrieves the data from these tables like this:
+Sort the result set by the email address in descending sequence and the product name in ascending sequence.
+
+4. Write an ALTER TABLE statement that adds two new columns to the Products table created in exercise 2.
+Add one column for product price that provides for three digits to the left of the decimal point and two to the right. This column should have a default value of 9.99.
+Add one column for the date and time that the product was added to the database.
+
+5. Write an ALTER TABLE statement that modifies the Users table created in exercise 2 so the first_name column cannot store NULL values and can store a maximum of 20 characters.
+Code an UPDATE statement that attempts to insert a NULL value into this column. It should fail due to the NOT NULL constraint.
+Code another UPDATE statement that attempts to insert a first name that’s longer than 20 characters. It should fail due to the length of the column.
